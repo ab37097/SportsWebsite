@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div id="container">
+        <div id="logo">SPORTS</div>
+        <div id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="news.html">News</a></li>
+                <!--Login button-->
+                <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+            </ul>
+        </div>
+        <div class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button id="b1" type='button'onclick='login()'class='toggle-btn' style="color: #ffffff;">Log In</button>
+                    <button id="b2" type='button'onclick='register()'class='toggle-btn' style="color: #000000;">Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+		            <input type='password'class='input-field'placeholder='Enter Password' required>
+		            <input type='checkbox'class='check-box'><span>Remember Password</span>
+		            <button type='submit'class='submit-btn' style="color: #e9e9eb;">Log in</button>
+		        </form>
+		        <form id='register' class='input-group-register'>
+		            <input type='text'class='input-field'placeholder='First Name' required>
+		            <input type='text'class='input-field'placeholder='Last Name ' required>
+		            <input type='email'class='input-field'placeholder='Email Id' required>
+		            <input type='password'class='input-field'placeholder='Enter Password' required>
+		            <input type='password'class='input-field'placeholder='Confirm Password'  required>
+		            <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit'class='submit-btn' style="color: #e9e9eb;">Register</button>
+	            </form>
+            </div>
+        </div>
+    </div> 
+</body>
+<script src="script/script.js"></script>
+</html>
